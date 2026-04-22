@@ -1,52 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17528867190">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17528867190"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17528867190');
+  </script>
 
-  gtag('config', 'AW-17528867190');
-</script>
-</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dema Hope Real Estate Addis Ababa | Luxury Apartments & Commercial Shops in Bole</title>
 
-  <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
   <link rel="icon" type="image/png" sizes="16x16" href="logo.png">
   <link rel="apple-touch-icon" href="logo.png">
 
   <meta name="description" content="Dema Hope Real Estate in Addis Ababa offers luxury apartments and prime commercial shops in Mahal Bole. Explore 1, 2, and 3 bedroom residences and business spaces with only 25% down payment. Call +251919549024 today." />
   <meta name="keywords" content="Dema Hope Real Estate, Dema Hope Real Estate Addis Ababa, luxury apartments Addis Ababa, apartments in Bole, commercial shops in Bole, real estate in Addis Ababa, Mahal Bole property, Addis Ababa luxury apartment, Bole commercial space, Addis Ababa investment property" />
-  <meta name="author" content="Dema Hope Real Estate" />
-  <meta name="robots" content="index, follow" />
-  <meta name="language" content="English" />
-  <meta name="revisit-after" content="7 days" />
   <meta name="theme-color" content="#274cdb" />
-
-  <link rel="canonical" href="https://demahoperealestate.com/" />
-
-  <meta property="og:title" content="Dema Hope Real Estate Addis Ababa | Luxury Apartments & Commercial Shops in Bole" />
-  <meta property="og:description" content="Own premium residential apartments and commercial spaces in Mahal Bole, Addis Ababa. Luxury living, strong investment potential, and only 25% down payment." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://demahoperealestate.com/" />
-  <meta property="og:image" content="logo.png" />
-  <meta property="og:site_name" content="Dema Hope Real Estate" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Dema Hope Real Estate Addis Ababa | Luxury Apartments & Commercial Shops in Bole" />
-  <meta name="twitter:description" content="Luxury residential apartments and prime business spaces in Mahal Bole, Addis Ababa. Contact Dema Hope Real Estate today." />
-  <meta name="twitter:image" content="logo.png" />
 
   <style>
     :root{
       --blue:#274cdb;
       --darkblue:#16267d;
+      --accent:#ff9100; /* High visibility orange */
       --light:#f5f7ff;
       --bg:#0f1535;
       --card:#151c45;
@@ -73,6 +52,48 @@
       line-height:1.6;
     }
 
+    /* --- NEW STICKY HEADER --- */
+    .top-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: flex-end;
+      background: rgba(15, 21, 53, 0.85);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .site-visit-btn {
+      background: var(--accent);
+      color: #000;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 14px;
+      padding: 10px 20px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 15px rgba(255, 145, 0, 0.4);
+      transition: transform 0.2s ease;
+      animation: pulse 2s infinite;
+    }
+
+    .site-visit-btn:hover {
+      transform: scale(1.05);
+      background: #ffa024;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255, 145, 0, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(255, 145, 0, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 145, 0, 0); }
+    }
+
+    /* --- EXISTING LAYOUT --- */
     .wrapper{
       width:100%;
       max-width:980px;
@@ -296,56 +317,25 @@
     }
 
     @media (max-width:640px){
-      .container{
-        padding:24px 16px;
+      .top-header {
+        justify-content: center; /* Center button on mobile for better thumb reach */
       }
-
-      h1{
-        font-size:28px;
-      }
-
-      .logo{
-        width:130px;
-        height:130px;
-      }
-
-      .section h2{
-        font-size:20px;
-      }
-
-      .intro{
-        font-size:14px;
-      }
+      .container{ padding:24px 16px; }
+      h1{ font-size:28px; }
+      .logo{ width:130px; height:130px; }
+      .section h2{ font-size:20px; }
+      .intro{ font-size:14px; }
     }
   </style>
-
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"RealEstateAgent",
-    "name":"Dema Hope Real Estate",
-    "url":"https://demahoperealestate.com/",
-    "logo":"https://demahoperealestate.com/logo.png",
-    "image":"https://demahoperealestate.com/logo.png",
-    "telephone":"+251919549024",
-    "description":"Dema Hope Real Estate offers luxury residential apartments and premium commercial spaces in Mahal Bole, Addis Ababa, with flexible payment options and strong investment potential.",
-    "areaServed":{
-      "@type":"City",
-      "name":"Addis Ababa"
-    },
-    "address":{
-      "@type":"PostalAddress",
-      "addressLocality":"Mahal Bole, Addis Ababa",
-      "addressCountry":"ET"
-    },
-    "sameAs":[
-      "https://demahoperealestate.com/"
-    ]
-  }
-  </script>
 </head>
 
 <body>
+  <header class="top-header">
+    <a href="tel:+251919549024" class="site-visit-btn">
+      <span>📍 CALL FOR SITE VISIT</span>
+    </a>
+  </header>
+
   <main class="wrapper">
     <section class="container">
       <div class="logo">
@@ -362,11 +352,11 @@
       <p class="intro">
         <strong>Dema Hope Real Estate</strong> presents a unique opportunity to own premium commercial and residential spaces in the heart of <strong>Mahal Bole, Addis Ababa</strong>. Whether you are looking for a high-traffic location for your business or a sophisticated luxury home, Dema Hope offers the right fit for both lifestyle and investment.
         <br><br>
-        Elevate your lifestyle and your business at one of the most sought-after addresses in Addis Ababa. With a prime location, strong visibility, and modern development quality, Dema Hope Real Estate is designed for buyers who want long-term value and a prestigious address.
+        Elevate your lifestyle and your business at one of the most sought-after addresses in Addis Ababa. With a prime location, strong visibility, and modern development quality, Dema Hope Real Estate is designed for buyers who want long-term value.
       </p>
 
       <div class="btn-grid">
-        <a class="btn" href="tel:+251919549024" aria-label="Call Dema Hope Real Estate phone number 0919549024">
+        <a class="btn" href="tel:+251919549024" aria-label="Call Dema Hope Real Estate">
           <div class="left">
             <div class="icon">📞</div>
             <span>Call Dema Hope Real Estate<br><small style="font-weight:600;opacity:.9;">0919549024</small></span>
@@ -374,7 +364,7 @@
           <div>›</div>
         </a>
 
-        <a class="btn" href="https://wa.me/251919549024?text=Hello%20Dema%20Hope%20Real%20Estate%2C%20I%20need%20more%20information%20about%20your%20luxury%20apartments%20and%20commercial%20shops%20in%20Mahal%20Bole." target="_blank" rel="noopener" aria-label="Chat with Dema Hope Real Estate on WhatsApp">
+        <a class="btn" href="https://wa.me/251919549024?text=Hello%20Dema%20Hope%20Real%20Estate..." target="_blank" rel="noopener">
           <div class="left">
             <div class="icon">💬</div>
             <span>WhatsApp Dema Hope</span>
@@ -382,119 +372,36 @@
           <div>›</div>
         </a>
 
-        <a class="btn secondary" href="https://demahoperealestate.com/" target="_blank" rel="noopener" aria-label="Visit Dema Hope Real Estate website">
+        <a class="btn secondary" href="https://demahoperealestate.com/" target="_blank">
           <div class="left">
             <div class="icon">🌐</div>
             <span>Visit Website</span>
           </div>
           <div>›</div>
         </a>
-
-        <a class="btn secondary" href="#" aria-label="View Dema Hope Real Estate office location">
-          <div class="left">
-            <div class="icon">📍</div>
-            <span>Office Location</span>
-          </div>
-          <div>›</div>
-        </a>
       </div>
 
       <section class="section">
-        <h2>Why Choose Dema Hope Real Estate in Addis Ababa?</h2>
-        <p>
-          If you are searching for <strong>luxury apartments in Addis Ababa</strong>, <strong>commercial shops in Bole</strong>, or a valuable investment property in a prime location, Dema Hope Real Estate offers location, quality, and strong future appreciation.
-        </p>
-        <p>
-          Mahal Bole is one of Addis Ababa’s most desirable areas for both living and business. This makes Dema Hope an excellent option for homeowners, investors, and entrepreneurs looking for premium real estate in Addis Ababa.
-        </p>
-        <p class="cta-text">
-          📞 Contact Dema Hope Real Estate today to reserve your preferred apartment or commercial unit before prices rise.
-        </p>
-
+        <h2>Why Choose Dema Hope Real Estate?</h2>
         <div class="highlights">
           <div class="highlight">
             <strong>Mahal Bole</strong>
-            <span>Prime central location in Addis Ababa</span>
+            <span>Prime central location</span>
           </div>
           <div class="highlight">
-            <strong>25% Down Payment</strong>
-            <span>Flexible entry into premium property</span>
+            <strong>25% Down</strong>
+            <span>Flexible entry point</span>
           </div>
           <div class="highlight">
-            <strong>1, 2 & 3 Bedrooms</strong>
-            <span>Luxury apartment choices for modern living</span>
+            <strong>1, 2 & 3 Beds</strong>
+            <span>Luxury residence options</span>
           </div>
           <div class="highlight">
             <strong>21 m²+</strong>
-            <span>Commercial shop options with expansion flexibility</span>
+            <span>Commercial shop options</span>
           </div>
         </div>
       </section>
-
-      <section class="section">
-        <h2>Commercial Spaces in Mahal Bole</h2>
-        <p>
-          Dema Hope Real Estate offers premium commercial shops in a high-visibility, high-footfall part of central Bole. These units are ideal for retail, service, office, and business operations that need exposure and convenience.
-        </p>
-
-        <div class="offer-box">
-          <h3>Commercial Shop Details</h3>
-          <ul>
-            <li><strong>Starting Size:</strong> 21 m²</li>
-            <li><strong>Flexible Expansion:</strong> Options available based on your business needs</li>
-            <li><strong>Location:</strong> Mahal Bole, central Addis Ababa</li>
-            <li><strong>Business Advantage:</strong> High visibility and high footfall area</li>
-            <li><strong>Investment Benefit:</strong> Strong appreciation potential and rental demand</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2>Luxury Residential Apartments</h2>
-        <p>
-          For buyers seeking elegant urban living, Dema Hope Real Estate provides luxury residential apartments built with comfort, beauty, and quality in mind.
-        </p>
-
-        <div class="offer-box">
-          <h3>Residential Apartment Details</h3>
-          <ul>
-            <li><strong>Unit Options:</strong> 1 bedroom, 2 bedroom, and 3 bedroom apartments</li>
-            <li><strong>Finish Level:</strong> Full finished luxury apartments</li>
-            <li><strong>Design:</strong> Spacious layouts for modern urban living</li>
-            <li><strong>Location:</strong> Mahal Bole, Addis Ababa</li>
-            <li><strong>Ideal For:</strong> Families, professionals, and investment buyers</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2>Flexible Payment & Investment Opportunity</h2>
-        <p>
-          Dema Hope Real Estate makes property ownership easier with an attractive payment structure and strong investment upside in one of Addis Ababa’s fastest-growing high-demand locations.
-        </p>
-
-        <div class="offer-box">
-          <h3>Payment Plan</h3>
-          <ul>
-            <li><strong>Down Payment:</strong> Only 25% to secure your unit</li>
-            <li><strong>Investment Strength:</strong> Prime location with strong appreciation potential</li>
-            <li><strong>Rental Potential:</strong> Excellent for residential and commercial rental yield</li>
-            <li><strong>Best For:</strong> Homeowners, landlords, and long-term real estate investors</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2>Dema Hope Real Estate Phone Number</h2>
-        <p>
-          To speak directly with the team, call <strong>Dema Hope Real Estate phone number: 0919549024</strong>. You can also contact Dema Hope on WhatsApp for apartment details, commercial shop availability, payment plans, and investment guidance in Mahal Bole, Addis Ababa.
-        </p>
-      </section>
-
-      <h2 class="sr-only">Dema Hope Real Estate Addis Ababa Luxury Apartments and Commercial Shops</h2>
-      <p class="sr-only">
-        Dema Hope Real Estate is a property developer in Addis Ababa offering luxury apartments, commercial shops in Mahal Bole, and premium real estate investment opportunities with a 25 percent down payment option.
-      </p>
 
       <footer>
         © <span id="year"></span> Dema Hope Real Estate • Mahal Bole, Addis Ababa
