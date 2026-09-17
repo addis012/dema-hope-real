@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Event snippet for Contact conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18454508308/wPbECI6m2_ocEJTm5d9E',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18454508308"></script>
 <script>
@@ -350,7 +367,7 @@
 
 <body>
   <header class="top-header">
-    <a href="tel:+251919549024" class="site-visit-btn">
+    <a href="tel:+251919549024" class="site-visit-btn" onclick="gtag_report_conversion()">
       <span>📍 CALL FOR SITE VISIT</span>
     </a>
   </header>
@@ -375,7 +392,7 @@
       </p>
 
       <div class="btn-grid">
-        <a class="btn" href="tel:+251919549024" aria-label="Call Dema Hope Real Estate">
+        <a class="btn" href="tel:+251919549024" aria-label="Call Dema Hope Real Estate" onclick="gtag_report_conversion()">
           <div class="left">
             <div class="icon">📞</div>
             <span>Call Dema Hope Real Estate<br><small style="font-weight:600;opacity:.9;">0919549024</small></span>
